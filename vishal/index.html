@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>APNA MADHYA PRADESH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #00ADEF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .content {
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .slider {
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        /* #home{
+            float: left;
+        }
+        #course{
+            float: left;
+        }
+        #about{
+            float: left;
+        }
+        #contact{
+            float: left;
+        } */
+         #r1-c1{
+            padding-left: 30px;
+        width: 50px;
+        float: left;
+         }
+         #r1-c2{
+            padding-right: 50px;
+            text-align: center;
+         }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div id="r1-c1"><img src="mp_logo.png" alt="G.K. INSTITUTE Logo" style="width: 50px;"></div>
+            <div id="r1-c2"><h1>MADHYA PRADESH TOURISM THE INDIAS BEAUTY</h1></div>
+        </div>
+        <nav>
+            <ul>
+                <li id="home"><a  href="index.html" >Home</a></li>
+                <li id="course"><a href="places.html">Places</a></li>
+                <li id="about"><a href="about.html">About</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="slider">
+            <div class="slides">
+                <img src="/spots/FRONT_IMG.png" style="width:100%" height="500px">
+            </div>
+            <div class="slides">
+                <img src="/spots/gwalior_fort.png" style="width:100%" height="500px">
+            </div>
+            <div class="slides">
+                <img src="/spots/khajurao2.png" style="width:100%" height="500px">
+            </div>
+            <div class="slides">
+                <img src="/spots/panchamani.png" style="width:100%" height="500px">
+            </div>
+            <div class="slides">
+                <img src="/spots/orcha.png" style="width:100%" height="500px">
+            </div>
+            <div class="slides">
+                <img src="/spots/khajurao2.png" style="width:100%" height="500px">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <div class="content">
+            <h2>Welcome to MADHYA PRADESH!</h2>
+            <p>Join us to explore the beauty and culture of Madhya Pradesh!</p>
+        </div>
+    </div>
+    
+    <section>
+        <div style="text-align: center; padding: 20px;">
+            <h2>know about Madhya Pradesh</h2>
+            <br>
+            <div style="display: flex; justify-content: space-around;">
+                <div>
+                    <img src="/spots/nature_logo.png" alt="Coaching Centers" style="width: px;">
+                    <h3>top-ranking tourism destination in India</h3>`
+                    <p>11.21 crore (112.1 million) tourist arrivals in year 2023</p>
+                </div>
+                <div>
+                    <img src="spots/mp_pic.png" alt="Qualified Students" style="width: 250px; height: 255px; margin-right: 2rem;" >
+                    <h3> 15–20 notable spots and dozens more  gems in MP </h3>
+                    <p>Khajuraho,for its ancient temples, and Pachmarhi, a picturesque hill station</p>
+                </div>
+                <div>
+                    <img src="spots/FRONT_IMG.png" alt="Expert Faculty" style="width: 255px; height: 150px; margin-right: 2rem;">
+                    <li>Pachmarhi</li>
+                    <li>Kanha National Park</li>
+                    <li>Gwalior Fort </li>
+                    <li>Orchha </li>
+                    <li>Bhimbetka Rock Shelters</li>
+                    <li>Bandhavgarh National Park</li>
+                    <li>Pench National Park</li>
+                    <li>Khajuraho Temples</li>
+                    <li>Sanchi Stupa</li>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section style="background-color: #e0f7fa; padding: 20px;">
+        <div style="text-align: center;">
+            <h2>Popular Beauty Spots</h2>
+            <div style="display: flex; justify-content: space-around;">
+                <div style="background-color: #ffffff; padding: 10px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                    <h3> Khajuraho Temples (Chhatarpur)</h3>
+                    <p>🏛️ Why Visit: UNESCO World Heritage Site known for stunning and intricate erotic carvings that showcase ancient Indian art and architecture.
+
+                        📍 Ideal For: History lovers, architecture enthusiasts, photographers.
+                        
+                        📅 Best Time: October to March.</p>
+                    <p><strong><a href="https://whc.unesco.org/en/list/240/">more read from UNESCO</a></strong></p>
+                </div>
+                <div style="background-color: #ffffff; padding: 10px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                    <h3>Pachmarhi (Satpura Hills)</h3>
+                    <p>🌲 Why Visit: The only hill station in MP, full of waterfalls, caves (like Jata Shankar), and cool weather—perfect for nature and peace seekers.
+
+                        📍 Ideal For: Nature lovers, couples, family trips.
+                        
+                        📅 Best Time: October to June.</p>
+                    <p><strong><a href="https://www.pachmarhi.com/">Official web of Pachmarhi</a></strong></p>
+                </div>
+                <div style="background-color: #ffffff; padding: 10px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                    <h3>Kanha National Park (Mandla & Balaghat)</h3>
+                    <p>🐅 Why Visit: One of India’s best tiger reserves, with lush forests and rich wildlife. It inspired Rudyard Kipling's The Jungle Book.
+
+                        📍 Ideal For: Wildlife photographers, adventure seekers, families.
+                        
+                        📅 Best Time: November to June (park closed during monsoon).</p>
+                    <p><strong><a href="https://www.kanhatigerreserve.org/">Official web</a></strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section style="padding: 40px 20px; text-align: center; background-color: #f9f9f9;">
+        <h2 style="font-size: 2em; margin-bottom: 20px;">Watch the Beauty of Madhya Pradesh</h2>
+        <div 
+            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+            <iframe 
+                src="https://www.youtube.com/embed/uo0CC093fvY?autoplay=1&mute=1&rel=0&showinfo=0&controls=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+            </iframe>
+        </div>
+        <p style="margin-top: 20px; font-size: 1.1em;">Explore the beauty of Madhya Pradesh!</p>
+    </section>
+    
+    
+    
+     
+
+    <section style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+        <div>
+            <img src="mp_logo.png" alt="madhyaPradesh" style="width: 150px;">
+            <h1>Madhya Pradesh Tourism</h1>
+            <p>Follow Us:</p>
+            <a href="https://www.facebook.com/MPTourism" target="_blank">
+                <img src="facebook.jpeg" alt="Facebook" style="width: 30px; margin: 0 10px;">
+            </a>
+            <a href="https://x.com/MPTourism" target="_blank">
+                <img src="twitter.jpeg" alt="Twitter" style="width: 30px; margin: 0 10px;">
+            </a>
+            <a href="http://www.youtube.com/@MadhyaPradeshTourism" target="_blank">
+                <img src="youtube.jpeg" alt="YouTube" style="width: 30px; margin: 0 10px;">
+            </a>
+            <a href="https://www.instagram.com/mptourism/" target="_blank">
+                <img src="instagrame.jpeg" alt="Instagram" style="width: 30px; margin: 0 10px; height: 30px;">
+            </a>
+            <a href="https://www.linkedin.com/company/madhya-pradesh-tourism/" target="_blank">
+                <img src="linkedin.jpeg" alt="LinkedIn" style="width: 30px; margin: 0 10px;">
+            </a>
+            <br><br><br><br><br><br><br>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <p>&copy; 2025 M.P. Tourism. The Way To Feel Nature. Managed by HARISH RAJAK , roll : (BTIR24O1029).</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>
